@@ -15,7 +15,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://examnotesaiclient-ichy.onrender.com";
+    origin: "https://examnotesaiclient-ichy.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   }),
