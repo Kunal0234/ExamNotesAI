@@ -1,58 +1,44 @@
-ExamNotes AI 🧠
+# ExamNotes AI 🧠
 
 An AI-powered SaaS platform that generates exam-oriented notes, diagrams, and revision content in one click using Google Gemini AI.
 
-Live Demo
+## Live Demo
+🚀 [examnotesaiclient-ichy.onrender.com](https://examnotesaiclient-ichy.onrender.com)
 
-🚀 examnotesaiclient-ichy.onrender.com
+## Features
 
-Features
+- 🤖 AI-generated exam notes using Google Gemini API
+- 💳 Credit-based payment system with Stripe integration
+- 🔐 JWT Authentication with bcrypt password hashing
+- 📊 Auto-generated diagrams, graphs and charts
+- 📝 Revision mode for short and crisp notes
+- 🎯 Subject and class-wise important questions
+- 🚀 Production-ready deployment
 
+## Tech Stack
 
-🤖 AI-generated exam notes using Google Gemini API
-💳 Credit-based payment system with Stripe integration
-🔐 JWT Authentication with bcrypt password hashing
-📊 Auto-generated diagrams, graphs and charts
-📝 Revision mode for short and crisp notes
-🎯 Subject and class-wise important questions
-🚀 Production-ready deployment
+**Frontend**
+- React.js
+- Axios
 
+**Backend**
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT Authentication
+- bcrypt
 
-Tech Stack
+**Integrations**
+- Google Gemini AI API
+- Stripe Payment Gateway + Webhooks
 
-Frontend
+**Deployment**
+- Backend: Render
+- Frontend: Render
 
+## Getting Started
 
-React.js
-Axios
-
-
-Backend
-
-
-Node.js + Express.js
-MongoDB + Mongoose
-JWT Authentication
-bcrypt
-
-
-Integrations
-
-
-Google Gemini AI API
-Stripe Payment Gateway + Webhooks
-
-
-Deployment
-
-
-Backend: Render
-Frontend: Render
-
-
-Getting Started
-
-bash# Clone the repo
+```bash
+# Clone the repo
 git clone https://github.com/Kunal0234/ExamNotesAI.git
 
 # Install backend dependencies
@@ -62,43 +48,49 @@ npm install
 # Install frontend dependencies
 cd ../client
 npm install
+```
 
-Environment Variables
+### Environment Variables
 
-Create a .env file in the server folder:
+Create a `.env` file in the server folder:
 
-envMONGODB_URI=your_mongodb_connection_string
+```env
+MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=your_gemini_api_key
 STRIPE_SECRET_KEY=your_stripe_secret_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 PORT=5000
+```
 
-Create a .env file in the client folder:
+Create a `.env` file in the client folder:
 
-envVITE_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+```env
+VITE_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+```
 
-bash# Run backend
+```bash
+# Run backend
 cd server
 npm run dev
 
 # Run frontend  
 cd client
 npm run dev
+```
 
-How It Works
+## How It Works
 
+1. User registers and logs in
+2. User purchases credits via Stripe payment
+3. Stripe webhook updates credits after successful payment
+4. User enters subject and topic
+5. Gemini AI generates structured exam notes
+6. Notes are displayed with diagrams and revision content
 
-User registers and logs in
-User purchases credits via Stripe payment
-Stripe webhook updates credits after successful payment
-User enters subject and topic
-Gemini AI generates structured exam notes
-Notes are displayed with diagrams and revision content
+## Project Structure
 
-
-Project Structure
-
+```
 ExamNotesAI/
 ├── server/
 │   ├── models/
@@ -112,10 +104,10 @@ ExamNotesAI/
 │   │   ├── pages/
 │   │   └── lib/
 │   └── index.html
+```
 
-Author
+## Author
 
-Kunal Kumar
-
-
-GitHub: @Kunal0234
+**Kunal Kumar**
+- GitHub: [@Kunal0234](https://github.com/Kunal0234)
+- LinkedIn: [linkedin.com/in/kunal-kumar](https://linkedin.com/in/kunal-kumar)
